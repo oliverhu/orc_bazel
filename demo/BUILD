@@ -1,9 +1,8 @@
-load("@rules_cc//cc:defs.bzl", "cc_library")
+load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 
-cc_library(
+cc_binary(
     name = "hello-time",
     srcs = ["hello-time.cc"],
-    hdrs = ["hello-time.h"],
     visibility = ["//visibility:public"],
     deps = [
       "@orc",

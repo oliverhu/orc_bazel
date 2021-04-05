@@ -9,12 +9,22 @@ load("@rules_foreign_cc//:workspace_definitions.bzl", "rules_foreign_cc_dependen
 
 rules_foreign_cc_dependencies()
 
+# http_archive(
+#     name = "orc",
+#     build_file = "//third_party:orc.BUILD",
+#     sha256 = "cea92df6bd524ad28c62d42c851094cf3e2c4686fc3101fb1d50f378c24ac0f2",
+#     strip_prefix = "orc-rel-release-1.5.12",
+#     urls = [
+#         "https://github.com/apache/orc/archive/refs/tags/rel/release-1.5.12.tar.gz",
+#     ],
+# )
+
 http_archive(
     name = "orc",
     build_file = "//third_party:orc.BUILD",
-    sha256 = "cea92df6bd524ad28c62d42c851094cf3e2c4686fc3101fb1d50f378c24ac0f2",
-    strip_prefix = "orc-rel-release-1.5.12",
+    sha256 = "abdffe48b8d2e7776c3b541ee2241401e49774941ca4a8c759e5d795daec8a45",
+    strip_prefix = "orc-rel-release-1.6.7",
     urls = [
-        "https://github.com/apache/orc/archive/refs/tags/rel/release-1.5.12.tar.gz",
+        "https://github.com/apache/orc/archive/refs/tags/rel/release-1.6.7.tar.gz",
     ],
 )

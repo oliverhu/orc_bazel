@@ -19,7 +19,7 @@ cmake(
     # ],
     visibility = ["//visibility:public"],
     # out_static_libs = ["libpcre.a"],
-    out_include_dir = "include/orc",
+    out_include_dir = "include",
     # out_lib_dir = "ORC-1.5.12-Linux/lib",
     out_static_libs = [
       "libhdfspp_static.a",
