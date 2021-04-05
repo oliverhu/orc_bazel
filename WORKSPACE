@@ -20,8 +20,8 @@ rules_foreign_cc_dependencies()
 # )
 
 http_archive(
-    name = "orc",
-    build_file = "//third_party:orc.BUILD",
+    name = "liborc",
+    build_file = "//third_party:liborc.BUILD",
     sha256 = "abdffe48b8d2e7776c3b541ee2241401e49774941ca4a8c759e5d795daec8a45",
     strip_prefix = "orc-rel-release-1.6.7",
     urls = [

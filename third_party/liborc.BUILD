@@ -7,8 +7,8 @@ filegroup(
 )
 
 cmake(
-    name = "orc",
-    lib_source = "@orc//:all_srcs",
+    name = "liborc",
+    lib_source = "@liborc//:all_srcs",
     cmake_options = [
       "-DBUILD_JAVA=OFF",
       "-DCMAKE_BUILD_TYPE=DEBUG"
@@ -21,15 +21,16 @@ cmake(
     # out_static_libs = ["libpcre.a"],
     out_include_dir = "include",
     # out_lib_dir = "ORC-1.5.12-Linux/lib",
-    out_static_libs = [
-      "libhdfspp_static.a",
-      "liborc.a",
-      "libprotoc.a",
-      "libz.a",
-      "liblz4.a",
-      "libprotobuf.a",
-      "libsnappy.a",
-      # "libzstd.a",
-    ],
+    # out_static_libs = [
+    #   "libhdfspp_static.a",
+    #   "liborc.a",
+    #   "libprotoc.a",
+    #   "libz.a",
+    #   "liblz4.a",
+    #   "libprotobuf.a",
+    #   "libsnappy.a",
+    #   "libzstd.a",
+    #   # "libzstd.a",
+    # ],
     tags = ["requires-network"],
 )

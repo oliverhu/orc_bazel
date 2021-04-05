@@ -5,6 +5,6 @@ cc_binary(
     srcs = ["hello-time.cc"],
     visibility = ["//visibility:public"],
     deps = [
-      "@orc",
+      "@liborc",
     ]
 )
