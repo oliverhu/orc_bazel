@@ -1,13 +1,18 @@
 #include <ctime>
 #include <iostream>
+#include "orc/orc-config.hh"
+#include <orc/Reader.hh>
+#include <orc/Exceptions.hh>
+#include <orc/OrcFile.hh>
+
 // #include "Reader.hh"
 // #include "ColumnPrinter.hh"
 // #include "Exceptions.hh"
 // #include "OrcFile.hh"
-#include "orc/Reader.hh"
-#include "orc/ColumnPrinter.hh"
-#include "orc/Exceptions.hh"
-#include "orc/OrcFile.hh"
+// #include "orc/Reader.hh"
+// #include "orc/ColumnPrinter.hh"
+// #include "orc/Exceptions.hh"
+// #include "orc/OrcFile.hh"
 
 void print_localtime() {
   std::time_t result = std::time(nullptr);
@@ -16,10 +21,9 @@ void print_localtime() {
 
 int main(int argc, char const *argv[])
 {
-    // std::list<uint64_t> read_cols = {1};
-    // std::string file_path = "~/demo-11-none.orc";
-    std::list<uint64_t> read_cols = {0};
-    std::string file_path = "~/demo-11-none.orc";//"./iris.orc";
+  std::cout << "test\n";
+  std::list<uint64_t> read_cols = {0, 1, 2, 3, 4};
+    std::string file_path = "./iris.orc";
 
     orc::RowReaderOptions row_reader_opts;
     row_reader_opts.include(read_cols);
