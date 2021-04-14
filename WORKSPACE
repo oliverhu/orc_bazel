@@ -9,16 +9,6 @@ load("@rules_foreign_cc//:workspace_definitions.bzl", "rules_foreign_cc_dependen
 
 rules_foreign_cc_dependencies()
 
-# http_archive(
-#     name = "orc",
-#     build_file = "//third_party:orc.BUILD",
-#     sha256 = "cea92df6bd524ad28c62d42c851094cf3e2c4686fc3101fb1d50f378c24ac0f2",
-#     strip_prefix = "orc-rel-release-1.5.12",
-#     urls = [
-#         "https://github.com/apache/orc/archive/refs/tags/rel/release-1.5.12.tar.gz",
-#     ],
-# )
-
 http_archive(
     name = "liborc",
     build_file = "//third_party:liborc.BUILD",
